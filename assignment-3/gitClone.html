@@ -2,111 +2,179 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100&display=swap" rel="stylesheet"> -->
+    <meta charset="utf-8" />
+    <title>960 Grid System &mdash; Demo</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/text.css" />
+    <link rel="stylesheet" href="css/960.css" />
+    <link rel="stylesheet" href="css/demo.css" />
 
-    <link rel="stylesheet" href="css/gitClone.css">
-    <link rel="shortcut icon" href="images/gitClone/gitLogo.png" type="image/icon">
-    <title>kkvahd</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        #topBar {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            left: 0;
+        }
+        
+        .topBarElement {
+            margin-top: 4vh;
+            height: 9vh;
+            width: 100%;
+            color: white;
+        }
+        
+        #searchBar {
+            display: flex;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            left: 0;
+            height: 7vh;
+            margin-top: -39px;
+            border-top: 0.5px black solid;
+            border-bottom: 0.5px grey solid;
+            padding-bottom: 2px;
+        }
+        
+        input {
+            height: 100%;
+            width: 100%;
+            border: none;
+            border-bottom: 0.5px grey solid;
+        }
+        
+        #moviesTitleDiv {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            left: 0;
+            font-size: 20px;
+        }
+        
+        .card {
+            /* Add shadows to create the "card" effect */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+        /* On mouse-over, add a deeper shadow */
+        
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+        /* Add some padding inside the card container */
+        
+        .container {
+            padding: 2px 16px;
+        }
+    </style>
+
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <ul>
-                <li id="gitDiv">
-                    <img id="gitLogo" class="navbar-brand" src="images/gitClone/gitLogo.png" alt="GITHUB">
-                </li>
-                <li>
-                    <input id="searchBar" type="search" placeholder="Search or jump to..." aria-label="Search">
-                </li>
-                <li class="navItems">
-                    <p><a href="#"> Requests</a>
+        <div id="topBar" class="container_16 " style="background-color:black;height: 17vh; width: 100%">
+            <div class="grid_2 prefix_3 topBarElement">
+                <img src="images/top-image.svg" style="max-width:100%;max-height:100%">
+            </div>
+            <div>
+                <div class="grid_2 topBarElement">
+                    <p><b>DISCOVER</b></p>
+                </div>
+                <div class="grid_2  topBarElement">
+                    <p><b>MOVIES</b></p>
+                </div>
+                <div class="grid_2  topBarElement">
+                    <p><b>TV SHOWS</b></p>
+                </div>
+                <div class="grid_2  topBarElement">
+                    <p><b>PEOPLE</b></p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <!--Search Bar-->
+        <div id="searchBar" class="container_16">
+            <div class="grid_14 prefix_3">
+                <input type="text" placeholder="Search..">
+            </div>
+        </div>
+
+        <div id="moviesTitleDiv" class="container_16">
+            <div class="grid_14 prefix_3">
+                <p><b>Popular Movies</b></p>
+            </div>
+        </div>
+
+        <!--Movies-->
+        <!--Row 1-->
+        <div id="moviesList" class="container_16">
+            <div class="grid_7 card" style=" height: 300px; border-radius: 5px; border-left: none; overflow: hidden;">
+                <div class="grid_3 ">
+                    <img src="images/movie1.jpg " style="width: 100%; height: 300px ">
+                </div>
+                <div class="grid_3 ">
+                    <b>Sacred Games</b>
+                    <p style="width: 100%; height: 25px ">
+                        Sacred Games Sacred Games is an Indian web television thriller series based on Vikram Chandra's 2006 novel of the same name. The first Netflix original series in India, it is directed by Vikramaditya Motwane and Anurag Kashyap, who produced it under their
+                        banner Phantom Films. The novel was adapted by Varun Grover, Singh and Vasant Nath......
                     </p>
-                </li>
-                <li class="navItems">
-                    <p><a href="#">Issues</a></p>
-                </li>
-                <li class="navItems">
-                    <p><a href="#">Marketplace</a></p>
-                </li>
-                <li class="navItems">
-                    <p><a href="#">Explore</a></p>
-                </li>
-            </ul>
-        </nav>
+                </div>
+            </div>
+
+            <div class="grid_7 card" style=" height: 300px; border-radius: 5px; border-left: none; overflow: hidden;">
+                <div class="grid_3 ">
+                    <img src="images/movie2.jpg " style="width: 100%; height: 300px ">
+                </div>
+                <div class="grid_3 ">
+                    <b>Breaking Bad</b>
+                    <p style="width: 100%; height: 25px ">
+                        Sacred Games Sacred Games is an Indian web television thriller series based on Vikram Chandra's 2006 novel of the same name. The first Netflix original series in India, it is directed by Vikramaditya Motwane and Anurag Kashyap, who produced it under their
+                        banner Phantom Films. The novel was adapted by Varun Grover, Singh and Vasant Nath......
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!--Row 2-->
+        <div id="moviesList" class="container_16">
+            <div class="grid_7 card" style=" height: 300px; border-radius: 5px; border-left: none; overflow: hidden;">
+                <div class="grid_3 ">
+                    <img src="images/movie3.jpg " style="width: 100%; height: 300px ">
+                </div>
+                <div class="grid_3 ">
+                    <b>Suits</b>
+                    <p style="width: 100%; height: 25px ">
+                        Suits is an American legal drama television series created and written by Aaron Korsh. The series premiered on June 23, 2011, on USA Network, and is produced by Universal Cable Productions. It is the network's longest running original series in terms
+                        of seasons and episodes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid_7 card" style=" height: 300px; border-radius: 5px; border-left: none; overflow: hidden;">
+                <div class="grid_3 ">
+                    <img src="images/movie4.jpg " style="width: 100%; height: 300px ">
+                </div>
+                <div class="grid_3 ">
+                    <b>The Punisher</b>
+                    <p style="width: 100%; height: 25px ">
+                        Marvel's The Punisher, or simply The Punisher, is an American web television series created for Netflix by Steve Lightfoot, based on the Marvel Comics character of the same name. It is set in the Marvel Cinematic Universe (MCU), sharing continuity with
+                        the films and other television series of the franchise, and is a spin-off of Marvel's Daredevil. The series is produced by Marvel Television in association with ABC Studios and Bohemian Risk Productions, with Lightfoot serving
+                        as showrunner.
+                    </p>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
-        <div>
-            <div id="profileDiv">
-                <img class="profile" id="profilePic" src="images/gitClone/profilePic.png" alt="">
-                <div class="profile" id="status">
-                    <p>&nbsp;&nbsp;&nbsp;Set status</p>
-                </div>
-                <div class="profile" id="userName">
-                    <p>kkvahd</p>
-                </div>
-                <div class="profile" id="profileButton">
-                    <button>
-                    Edit Profile
-                </button>
-                </div>
-            </div>
-            <div id="userInfo">
-                <nav class="userNav">
-                    <ul>
-                        <li class="userOptions">
-                            Overview
-                        </li>
-                        <li class="userOptions">
-                            Repositories
-                        </li>
-                        <li class="userOptions">
-                            Projects
-                        </li>
-                        <li class="userOptions">
-                            Stars
-                        </li>
-                        <li class="userOptions">
-                            Followers
-                        </li>
-                        <li class="userOptions">
-                            Following
-                        </li>
-                    </ul>
-                </nav>
 
-                <div id="hrContainer">
-                    <!-- <hr id="line"> -->
-                </div>
-                <div>
-                    <div id="projectInfo">
-                        <p>Popular repositories </p>
-                        <div id="card1">
-                            <p class="boxText"><b>JAVA</b></p>
-                        </div>
-                        <div id="card2">
-                            <p class="boxText"><b>HTML</b></p>
-                        </div>
-                        <br>
-                        <br>
-                        <p>10 Contributions in the last year </p>
-                        <div id="card1">
-                            <p class="boxText"><b>PYTHON</b></p>
-                        </div>
-                        <div id="card2">
-                            <p class="boxText"><b>JAVASCRIPT</b></p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
     </main>
 
     <footer>
