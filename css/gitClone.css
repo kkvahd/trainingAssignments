@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    display: inline-block;
+    ;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+#gitLogo {
+    width: 50px;
+    height: 100%;
+}
+
+#gitDiv {
+    float: left;
+}
+
+.navbar {
+    display: flex;
+    background-color: #24292e;
+    width: 100%;
+    align-items: center;
+}
+
+#searchBar {
+    text-decoration-color: #8d8b88;
+    background-color: #404448;
+    border: none;
+    border-radius: 3.5px;
+    margin-top: 7.5px;
+    /* margin-left: 4px; */
+    height: 30px;
+    width: 300px;
+}
+
+.navItems {
+    color: white;
+    margin-left: 20px;
+    font-size: 1ch;
+}
+
+.navItems a {
+    color: white;
+    text-decoration: none;
+}
+
+.navItems a:hover {
+    color: #576570;
+}
+
+#profileDiv {
+    float: left;
+    padding-top: 4vh;
+    /* padding-right: 5px; */
+    padding-left: 17px;
+    padding-top: -10px;
+    width: 300px;
+    /* border-right: 1px black solid; */
+    color: #957a85;
+    font-size: 12px;
+}
+
+.profile {
+    margin-left: 26px;
+}
+
+#profilePic {
+    width: 45vh;
+}
+
+#status {
+    border: 1px solid #ecedee;
+    border-top: none;
+    margin-top: -15px;
+    border: 1p;
+    align-content: center;
+}
+
+#userName {
+    text-decoration: none;
+    color: #73808c;
+    font-size: 22px;
+    font-weight: 100;
+    font-family: sans-serif
+}
+
+#profileButton>button {
+    width: 100%;
+    height: 30px;
+    background-color: #f4f7f9;
+    border: 1px #ccced0 solid;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    font-weight: 540;
+}
+
+#userInfo {
+    margin-left: 32px;
+    margin-top: 20px;
+    float: none
+}
+
+.userNav {
+    padding-left: 150px;
+    /* border-bottom: 1px #24292e solid; 
+    display: flex;
+    /* width: 100%; */
+}
+
+.userNav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+    overflow: hidden;
+    /* border-bottom: #24292e 1px solid; */
+}
+
+.userOptions {
+    padding-right: 18px;
+    /* border-bottom: 1px black solid; */
+    padding-bottom: 10px;
+}
+
+#line {
+    color: black;
+    margin-left: 120px;
+    margin-top: -20px;
+}
+
+#hrContainer {
+    padding: 20px;
+    border-top: #ededee 1px solid;
+    margin-left: 433px;
+    margin-top: -20px;
+}
+
+.userOptions:hover {
+    border-bottom: orange 1px solid;
+}
+
+#projectInfo {
+    margin-left: 435px;
+    width: 100%;
+}
+
+#card1 {
+    height: 100px;
+    width: 30%;
+    border: 1px #d1d5da solid;
+    float: left;
+    border-radius: 5px;
+}
+
+#card2 {
+    height: 100px;
+    width: 30%;
+    border: 1px #d1d5da solid;
+    /* float: left; */
+    margin-left: 420px;
+    border-radius: 5px;
+}
+
+.boxText {
+    color: blue;
+    font-size: 10px;
+    margin-left: 4px
+}

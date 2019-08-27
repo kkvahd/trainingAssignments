@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: lightcoral;
+}
+
+header>h1 {
+    display: inline;
+}
+
+nav {
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: cornsilk;
+}
+
+p {
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+}
+
+table {
+    border: 2pt solid red;
+}
+
+tr,
+td,
+th {
+    border: 1pt solid greenyellow;
+}
