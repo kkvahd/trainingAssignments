@@ -8,144 +8,176 @@
     <link rel="stylesheet" href="css/text.css" />
     <link rel="stylesheet" href="css/960.css" />
     <link rel="stylesheet" href="css/demo.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
 
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        #topBar {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            left: 0;
+        }
+        
+        .topBarElement {
+            margin-top: 4vh;
+            height: 9vh;
+            width: 100%;
+            color: white;
+        }
+        
+        #searchBar {
+            display: flex;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            left: 0;
+            height: 7vh;
+            margin-top: -39px;
+            border-top: 0.5px black solid;
+            border-bottom: 0.5px grey solid;
+            padding-bottom: 2px;
+        }
+        
+        input {
+            height: 100%;
+            width: 100%;
+            border: none;
+            border-bottom: 0.5px grey solid;
+        }
+        
+        #moviesTitleDiv {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            left: 0;
+            font-size: 20px;
+        }
+        
+        .card {
+            /* Add shadows to create the "card" effect */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+        /* On mouse-over, add a deeper shadow */
+        
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+        /* Add some padding inside the card container */
+        
+        .container {
+            padding: 2px 16px;
+        }
     </style>
 
 </head>
 
 <body>
     <header>
-        <div class="container_16 " style="background-color:black;height: 10vh;width: 100%;">
-            <div class="grid_1 ">
-                <img src="images/top-image.svg" style="position: relative; top: 6px; left:40px">
+        <div id="topBar" class="container_16 " style="background-color:black;height: 17vh; width: 100%">
+            <div class="grid_2 prefix_3 topBarElement">
+                <img src="images/top-image.svg" style="max-width:100%;max-height:100%">
             </div>
-            <div class="grid_1 prefix_1">
-                <h7 style="color: white; position: relative; top: 10px">DISCOVER</h7>
-            </div>
-            <div class="grid_1 prefix_1 " style="text-align: center;">
-                <h7 style="margin: 17px;color: white;position: relative; top: 10px;">MOVIES</h7>
-            </div>
-            <div class="grid_3 prefix_1">
-                <h7 style="color: white; position: relative; left: 12px; top: 10px">TV SHOWS</h7>
-            </div>
-            <div class="grid_1">
-                <h7 style="color: white; position: relative; top: 10px">
-                    PEOPLE</h7>
+            <div>
+                <div class="grid_2 topBarElement">
+                    <p><b>DISCOVER</b></p>
+                </div>
+                <div class="grid_2  topBarElement">
+                    <p><b>MOVIES</b></p>
+                </div>
+                <div class="grid_2  topBarElement">
+                    <p><b>TV SHOWS</b></p>
+                </div>
+                <div class="grid_2  topBarElement">
+                    <p><b>PEOPLE</b></p>
+                </div>
             </div>
         </div>
-        <div class="container_24 ">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Search" aria-label="Search"
-                    aria-describedby="basic-addon2" style="margin-top:-13px">
+        <br><br>
+
+        <!--Search Bar-->
+        <div id="searchBar" class="container_16">
+            <div class="grid_14 prefix_3">
+                <input type="text" placeholder="Search..">
             </div>
         </div>
     </header>
     <main>
-        <div class="container_12 flex-container" style=" margin-top: 2vh; height: 100%;">
-            <h2 style="margin-left: 2vh">
-                Popular Movies
-            </h2>
-            <!-- Images and text-->
-            <div>
-                <div style="margin-top: 40px">
-                    <div class="grid_3 " style="height: 40px">
-                        <img src="images/movie1.jpg" style="width: 100%; height: 300px">
-                    </div>
-                    <div class="grid_3 parent" style="height: 40px">
-                        <h4>Sacred Games</h4>
-                        <p>Sacred Games is an Indian web television thriller series based on Vikram Chandra's 2006 novel
-                            of
-                            the
-                            same
-                            name. The first Netflix original series in India, it is directed by Vikramaditya Motwane and
-                            Anurag
-                            Kashyap, who produced it under their banner Phantom Films. The novel was adapted by Varun
-                            Grover,
-                            Singh
-                            and Vasant Nath. Kelly Luegenbiehl, Erik Barmack and Motwane served as the executive
-                            producers.
-                        </p>
-                    </div>
+        <div id="moviesTitleDiv" class="container_16">
+            <div class="grid_14 prefix_3">
+                <p><b>Popular Movies</b></p>
+            </div>
+        </div>
+
+        <!--Movies-->
+        <!--Row 1-->
+        <div id="moviesList" class="container_16">
+            <div class="grid_7 card" style=" height: 300px; border-radius: 5px; border-left: none; overflow: hidden;">
+                <div class="grid_3 ">
+                    <img src="images/movie1.jpg " style="width: 100%; height: 300px ">
                 </div>
-                <div>
-                    <div class="grid_3 parent" style="height: 40px; ">
-                        <img src="images/movie2.jpg" style="width: 100%; height: 300px">
-                    </div>
-                    <div class="grid_3 parent" style="height: 40px">
-                        <h4>Breaking Bad</h4>
-                        <p>Breaking Bad is an American neo-Western crime drama television series created and produced by
-                            Vince
-                            Gilligan. The show originally aired on AMC for five seasons, from January 20, 2008, to
-                            September
-                            29,
-                            2013. Set and filmed in Albuquerque, New Mexico, the series tells the story of Walter White
-                            (Bryan
-                            Cranston), a struggling and depressed high school chemistry teacher who is diagnosed with
-                            stage-3
-                            lung cancer.</p>
-                    </div>
+                <div class="grid_3 ">
+                    <b>Sacred Games</b>
+                    <p style="width: 100%; height: 25px ">
+                        Sacred Games Sacred Games is an Indian web television thriller series based on Vikram Chandra's 2006 novel of the same name. The first Netflix original series in India, it is directed by Vikramaditya Motwane and Anurag Kashyap, who produced it under their
+                        banner Phantom Films. The novel was adapted by Varun Grover, Singh and Vasant Nath......
+                    </p>
                 </div>
             </div>
 
+            <div class="grid_7 card" style=" height: 300px; border-radius: 5px; border-left: none; overflow: hidden;">
+                <div class="grid_3 ">
+                    <img src="images/movie2.jpg " style="width: 100%; height: 300px ">
+                </div>
+                <div class="grid_3 ">
+                    <b>Breaking Bad</b>
+                    <p style="width: 100%; height: 25px ">
+                        Sacred Games Sacred Games is an Indian web television thriller series based on Vikram Chandra's 2006 novel of the same name. The first Netflix original series in India, it is directed by Vikramaditya Motwane and Anurag Kashyap, who produced it under their
+                        banner Phantom Films. The novel was adapted by Varun Grover, Singh and Vasant Nath......
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!--Row 2-->
+        <div id="moviesList" class="container_16">
+            <div class="grid_7 card" style=" height: 300px; border-radius: 5px; border-left: none; overflow: hidden;">
+                <div class="grid_3 ">
+                    <img src="images/movie3.jpg " style="width: 100%; height: 300px ">
+                </div>
+                <div class="grid_3 ">
+                    <b>Suits</b>
+                    <p style="width: 100%; height: 25px ">
+                        Suits is an American legal drama television series created and written by Aaron Korsh. The series premiered on June 23, 2011, on USA Network, and is produced by Universal Cable Productions. It is the network's longest running original series in terms
+                        of seasons and episodes.
+                    </p>
+                </div>
+            </div>
 
-            <!-- Movies list 2-->
-            <div>
-                <div class="container_12 " style=" margin-top: 80vh">
-                    <h2 style="margin-left: 2vh">
-                    </h2>
-                    <div>
-                        <div class="grid_3 parent" style="height: 40px">
-                            <img src="images/movie1.jpg" style="width: 100%; height: 300px">
-                        </div>
-                        <div class="grid_3 parent" style="height: 40px">
-                            <h4>Sacred Games</h4>
-                            <p>Sacred Games is an Indian web television thriller series based on Vikram Chandra's 2006
-                                novel
-                                of
-                                the
-                                same
-                                name. The first Netflix original series in India, it is directed by Vikramaditya Motwane
-                                and
-                                Anurag
-                                Kashyap, who produced it under their banner Phantom Films. The novel was adapted by
-                                Varun
-                                Grover,
-                                Singh
-                                and Vasant Nath. Kelly Luegenbiehl, Erik Barmack and Motwane served as the executive
-                                producers.
-                            </p>
-                        </div>
-                        <div>
-                            <div class="grid_3 parent" style="height: 40px">
-                                <img src="images/movie2.jpg" style="width: 100%; height: 300px">
-                            </div>
-                            <div class="grid_3 parent" style="height: 40px">
-                                <h4>Breaking Bad</h4>
-                                <p>Breaking Bad is an American neo-Western crime drama television series created and
-                                    produced by
-                                    Vince
-                                    Gilligan. The show originally aired on AMC for five seasons, from January 20, 2008,
-                                    to
-                                    September
-                                    29,
-                                    2013. Set and filmed in Albuquerque, New Mexico, the series tells the story of
-                                    Walter
-                                    White
-                                    (Bryan
-                                    Cranston), a struggling and depressed high school chemistry teacher who is diagnosed
-                                    with
-                                    stage-3
-                                    lung cancer.</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="grid_7 card" style=" height: 300px; border-radius: 5px; border-left: none; overflow: hidden;">
+                <div class="grid_3 ">
+                    <img src="images/movie4.jpg " style="width: 100%; height: 300px ">
+                </div>
+                <div class="grid_3 ">
+                    <b>The Punisher</b>
+                    <p style="width: 100%; height: 25px ">
+                        Marvel's The Punisher, or simply The Punisher, is an American web television series created for Netflix by Steve Lightfoot, based on the Marvel Comics character of the same name. It is set in the Marvel Cinematic Universe (MCU), sharing continuity with
+                        the films and other television series of the franchise, and is a spin-off of Marvel's Daredevil. The series is produced by Marvel Television in association with ABC Studios and Bohemian Risk Productions, with Lightfoot serving
+                        as showrunner.
+                    </p>
                 </div>
             </div>
         </div>
     </main>
+
+    <br><br><br>
+    <footer>
+        <div id="topBar" class="container_16 " style="background-color:black;height: 16vh; width: 100%">
+    </footer>
 </body>
 
 </html>
