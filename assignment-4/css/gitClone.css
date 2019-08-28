@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+}
+
+nav {
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+#gitLogo {
+    width: 50px;
+    height: 100%;
+}
+
+#gitDiv {
+    float: left;
+}
+
+.navbar {
+    display: flex;
+    background-color: #24292e;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#searchBar {
+    text-decoration-color: #8d8b88;
+    background-color: #404448;
+    border: none;
+    border-radius: 3.5px;
+    /* margin-top: 7.5px; */
+    /* margin-left: 4px; */
+    height: 30px;
+    width: 21vw;
+}
+
+.navItems {
+    color: white;
+    margin-left: 20px;
+    font-size: 1ch;
+}
+
+.navItems a {
+    color: white;
+    text-decoration: none;
+}
+
+.navItems a:hover {
+    color: #576570;
+}
+
+#profileDiv {
+    padding-top: 4vh;
+    color: #957a85;
+    font-size: 12px;
+}
+
+.profile {
+    width: 20vw;
+}
+
+#status {
+    border: 1px solid #ecedee;
+    border-top: none;
+    margin-top: -15px;
+    border: 1p;
+    align-content: center;
+}
+
+#userName {
+    text-decoration: none;
+    color: #73808c;
+    font-size: 22px;
+    font-weight: 100;
+    font-family: sans-serif
+}
+
+#profileButton>button {
+    width: 100%;
+    height: 30px;
+    background-color: #f4f7f9;
+    border: 1px #ccced0 solid;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    font-weight: 540;
+}
+
+.userNav ul {
+    list-style-type: none;
+    margin-left: 0;
+    overflow: hidden;
+    border-bottom: 1px #24292e solid;
+}
+
+.userOptions {
+    padding-right: 18px;
+    padding-bottom: 10px;
+}
+
+.userOptions:hover {
+    border-bottom: orange 1px solid;
+}
+
+#mainDiv {
+    width: 100vw;
+}
+
+#mainStuff {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#userInfo {
+    padding: 4vh;
+    padding-left: 12vh;
+}
+
+#projectInfo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.workRow1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1vh;
+}
+
+.boxText {
+    width: 50vh;
+    border: 1px #d1d5da solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.boxText {
+    color: blue;
+    font-size: 10px;
+    margin-left: 4px
+}
+
+@media screen and (max-width: 540px) {
+    header {
+        width: 100%;
+    }
+    header>nav {
+        width: 106vw;
+    }
+    .navbar {
+        display: flex;
+        background-color: #24292e;
+        width: 100%;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #userInfo {
+        padding-left: 0;
+    }
+    .workRow1 ul {
+        padding: 0;
+    }
+    .userNav ul {
+        padding: 0;
+        margin: none:
+    }
+    #profileDiv {
+        padding-left: 30vw;
+    }
+    #profileButton>button {
+        height: 35px;
+    }
+    #projectHeading1 {
+        text-align: center;
+    }
+    #projectInfo li {
+        margin-left: -9vw;
+    }
+    #searchBar {
+        text-decoration-color: #8d8b88;
+        background-color: #404448;
+        border: none;
+        border-radius: 3.5px;
+        margin-left: 6vw;
+        height: 30px;
+    }
+}
