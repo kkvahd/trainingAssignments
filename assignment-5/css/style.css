@@ -1,0 +1,154 @@
+body {
+    font-family: 'Manjari', sans-serif;
+}
+
+#brandLogo {
+    color: #e23743;
+    font-weight: bolder;
+}
+
+#tryForFreeBotton {
+    background-color: #f23440;
+    border: #f23440 1px solid;
+    border-radius: 100px;
+}
+
+#tryForFreeBotton span {
+    color: white;
+}
+
+#jumbotron1 {
+    background-image: url(../images/jumbotronImage.webp);
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    margin: 0;
+}
+
+#jumbotron1 #jumbotronText {
+    color: white;
+    font-weight: bolder;
+}
+
+#jumbotron1 #jumbotronText p span {
+    color: white;
+    font-size: 12vh;
+}
+
+#jumbotron1 #jumbotronText p:nth-child(2) {
+    color: white;
+    font-size: 4vh;
+}
+
+#blackContainer {
+    background-color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-top: 4vh;
+}
+
+.blackContainerHeading {
+    color: white;
+}
+
+.blackContainerbody {
+    color: #5d5d5f;
+    font-size: xx-large !important;
+}
+
+#jumbotron2 {
+    background-color: #0b2958;
+    margin: 0;
+}
+
+#jumbotron2 p:nth-child(1) {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    margin: 0;
+}
+
+#jumbotron2 p:nth-child(2) {
+    font-size: x-large;
+    font-weight: bold;
+    color: #576b8c;
+}
+
+#phone {
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform .9s;
+}
+
+#jumbotron3 {
+    background-color: #000000;
+    margin: 0;
+}
+
+#jumbotron3 p:nth-child(1) {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    margin: 0;
+}
+
+#jumbotron3 p:nth-child(3) {
+    font-size: x-large;
+    font-weight: bold;
+    color: #3c3c3c;
+}
+
+#jumbotron3 p:nth-child(4) {
+    font-size: x-large;
+    font-weight: bold;
+    color: #3c3c3c;
+}
+
+#learnMoreContainer {
+    background-color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-top: 4vh;
+}
+
+#learnMore {
+    color: white;
+    font-size: medium;
+}
+
+#spotifyCom {
+    color: #1ca64d;
+}
+
+#soundTrackContainer {
+    background-color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-top: 4vh;
+}
+
+#posty {
+    color: #f23440;
+}
+
+footer {
+    background-color: #f23440;
+    padding-top: 5vh;
+    color: white;
+    font-weight: bolder;
+}
+
+footer .row ul li a {
+    color: white;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 540px) {
+    body {
+        margin: -1vw;
+    }
+}
+
+#phone:hover {
+    transform: scale(1.2);
+}
