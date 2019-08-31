@@ -49,16 +49,15 @@
 
         function addName(name, status) {
             if (document.getElementById("nameDiv") && document.getElementById("nameDiv").hasChildNodes()) {
-                // debugger;
                 document.getElementById("nameDiv").removeChild(document.getElementById("nameDiv").firstChild);
             }
             if (name && status === "success") {
-                let namePara = document.createElement("p");
+                let namePara = document.createElement("h3");
                 namePara.innerText = name.charAt(0).toUpperCase() + name.slice(1);
                 document.getElementById("nameDiv").setAttribute("class", "alert alert-success");
                 document.getElementById("nameDiv").appendChild(namePara);
             } else {
-                let namePara = document.createElement("p");
+                let namePara = document.createElement("h3");
                 namePara.innerText = "The name " + name + " doesn't exist.";
                 document.getElementById("nameDiv").setAttribute("class", "alert alert-danger");
                 document.getElementById("nameDiv").appendChild(namePara);
