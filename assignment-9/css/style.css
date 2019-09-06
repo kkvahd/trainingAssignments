@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+}
+
+.noteItem {
+    background-color: #d9534f;
+    border: black 1px solid;
+    color: white;
+    font-weight: bold;
+    min-width: 12vw;
+    max-width: 12vw;
+    max-height: 15vh;
+    text-align: center;
+}
+
+#buttonContainer {
+    padding: 0;
+    background-color: black;
+    margin-top: 10vh;
+}
+
+#exampleInputEmail1 {
+    margin-top: 10vh;
+}

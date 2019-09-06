@@ -1,0 +1,66 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "The Godfather",
+      "posterPath": "./images/godfather.jpg"
+    },
+    {
+      "id": 2,
+      "title": "The Shawshank Redemption",
+      "posterPath": "./images/shawshank.jpg"
+    },
+    {
+      "id": 3,
+      "title": " Schindler's List",
+      "posterPath": "./images/schindler.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Raging Bull",
+      "posterPath": "./images/ragingBull.jpg"
+    },
+    {
+      "id": 5,
+      "title": " Casablanca",
+      "posterPath": "./images/casablanca.jpg"
+    },
+    {
+      "id": 6,
+      "title": " Citizen Kane",
+      "posterPath": "./images/citizenKane.jpg"
+    },
+    {
+      "id": 7,
+      "title": " Gone with the Wind",
+      "posterPath": "./images/goneWithTheWind.jpg"
+    },
+    {
+      "id": 8,
+      "title": "The Wizard of Oz",
+      "posterPath": "./images/theWizardOfOz.jpg"
+    },
+    {
+      "id": 9,
+      "title": "One Flew Over the Cuckoo's Nest",
+      "posterPath": "./images/oneFlewOver.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Lawrence of Arabia",
+      "posterPath": "./images/lawrenceOfArabia.jpg"
+    }
+  ],
+  "favourites": [
+    {
+      "id": 1,
+      "title": "The Godfather",
+      "posterPath": "./images/godfather.jpg"
+    },
+    {
+      "id": 3,
+      "title": " Schindler's List",
+      "posterPath": "./images/schindler.jpg"
+    }
+  ]
+}
